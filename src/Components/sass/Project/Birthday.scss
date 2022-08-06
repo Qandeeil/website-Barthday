@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.project-1{
+    background-color: #E86EA9;
+    height: 100vh;
+    position: relative;
+    & .content{
+        width: 30%;
+        background-color: azure;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        box-shadow: 0 0 4rem .1rem rgba($color: #000000, $alpha: 1.0);
+        & .header{
+            width: 90%;
+            margin: 1rem auto;
+            & h1{
+                font-size: 2.5rem;
+            }
+        }
+        &  .all-person{
+            width: 90%;
+            margin: auto;
+            height: 39rem;
+            overflow-y: scroll;
+            & .person{
+                display: flex;
+                margin-bottom: 1.5rem;
+                & img{
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                }
+                & .text{
+                    font-weight: bold;
+                    width: 70%;
+                    margin: auto;
+                    & .name{
+                        display: block;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                    & .age{
+                        display: inline-block;
+                        opacity: .7;
+                        margin-top: .2rem;
+                        font-size: 1.2rem;
+                    }
+                }
+                & .clear{
+                    display: inline-block;
+                    font-weight: bold;
+                    font-size: 2rem;
+                    width: 5%;
+                    margin-top: .5rem;  
+                    cursor: pointer; 
+                    color: #E86EA9;                 
+                }
+            }
+        }
+        & .button{
+                width: 80%;
+                margin: auto;
+            & button{
+                width: 100%;
+                margin: auto;
+                height: 3rem;
+                margin-bottom: 1.5rem;
+                background-color: #E86EA9;
+                color: #fff;
+                font-weight: bold;
+                font-size: 1.5rem;
+                letter-spacing: .1rem;
+                border: #E86EA9 2px solid;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    background-color: #fff;
+                    color: #E86EA9;
+                }
+            }
+        }
+    }
+}

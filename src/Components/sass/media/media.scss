@@ -1,0 +1,49 @@
+@media (max-width: 1389px) {
+    .project-1{
+        .content{
+            width: 40%;
+        }
+    }
+}
+@media (max-width: 905px) {
+    .project-1{
+        .content{
+            width: 60%;
+        }
+    }
+}
+@media (max-width: 601px) {
+    .project-1{
+        .content{
+            width: 90%;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .project-1{
+        .content{
+            width: 90%;
+            & .header{
+                & h1{
+                    font-size: 2rem;
+                }
+            }
+            &  .all-person{
+                & .person{
+                    & img{
+                        width: 3.5rem;
+                        height: 3.5rem;
+                    }
+                    & .text{
+                        & .name{
+                            font-size: 1.3rem;
+                        }
+                        & .age{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
