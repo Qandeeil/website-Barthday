@@ -27,7 +27,7 @@ const Birthday = () => {
         <div className='project-1'>
             <div className='content'>
                 <div className='header'>
-                    <h1>Birthdays today</h1>
+                    <h1> {DataPerson.person.length} Birthdays today</h1>
                 </div>
                 <div className='all-person'>
                     {DataStore()}
